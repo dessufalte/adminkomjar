@@ -86,10 +86,9 @@ export default async function Home() {
         {/* --- Visi & Misi Section --- */}
         <section className="bg-slate-800 py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-white">Visi & Misi</h2>
+            <h2 className="text-3xl font-bold text-white">Visi & Misi Departemen</h2>
             <p className="mt-4 text-lg text-slate-400">
-              Menjadi laboratorium unggul yang menghasilkan lulusan kompeten dan
-              inovatif di bidang teknologi komputer dan jaringan.
+              Menjadi Program Studi Teknik Komputer yang terkemuka di bidang Rekayasa Sistem Tertanam di tingkat Global pada tahun 2028.
             </p>
             <ul className="mt-8 space-y-4 text-left">
               <li className="flex items-start p-4 bg-slate-700/50 rounded-lg border border-slate-700">
@@ -107,8 +106,7 @@ export default async function Home() {
                   />
                 </svg>
                 <span>
-                  Menyelenggarakan kegiatan praktikum yang berkualitas dan
-                  sesuai dengan perkembangan teknologi.
+                  Menyelenggarakan pendidikan berkualitas tinggi untuk menghasilkan lulusan yang profesional dan mampu memenuhi kebutuhan masyarakat, industri dan pemerintah.
                 </span>
               </li>
               <li className="flex items-start p-4 bg-slate-700/50 rounded-lg border border-slate-700">
@@ -126,8 +124,7 @@ export default async function Home() {
                   />
                 </svg>
                 <span>
-                  Mendorong penelitian dan pengembangan di bidang komputer dan
-                  jaringan oleh mahasiswa dan dosen.
+                  Melaksanakan riset untuk pengembangan konsep dan ilmu yang berkelanjutan di bidang Teknik Komputer.
                 </span>
               </li>
               <li className="flex items-start p-4 bg-slate-700/50 rounded-lg border border-slate-700">
@@ -145,8 +142,7 @@ export default async function Home() {
                   />
                 </svg>
                 <span>
-                  Menjalin kerjasama dengan industri untuk menyelaraskan
-                  kurikulum dan membuka peluang karir.
+                  Melaksanakan pengabdian masyarakat dalam rangka penerapan ilmu teknik komputer.
                 </span>
               </li>
             </ul>
@@ -218,8 +214,7 @@ export default async function Home() {
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-white">Kunjungi Kami</h2>
               <p className="mt-4 text-slate-400">
-                Temukan lokasi kami di kampus untuk semua kebutuhan praktikum
-                Anda.
+                Temukan lokasi kami di kampus Unand
               </p>
             </div>
             <div className="grid lg:grid-cols-5 gap-8 items-center">
