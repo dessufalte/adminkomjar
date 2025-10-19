@@ -1,0 +1,76 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Praktikum {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  kode        String   @unique
+  deskripsi   String?
+  fotoUrl     String?
+  linkPendaftaran String?
+  moduls      Modul[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Modul {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  kode        String   @unique
+  fileUrl     String?
+  praktikum   Praktikum @relation(fields: [praktikumId], references: [id])
+  praktikumId Int
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Project {
+  id            Int      @id @default(autoincrement())
+  nama          String
+  pembuat       String
+  bahasa        String
+  tanggal       DateTime
+  deskripsi     String?
+  fotoUrl       String?
+  tautanGithub  String?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Surat {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  jenis       String
+  tanggal     DateTime
+  fileUrl     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Galeri {
+  id          Int      @id @default(autoincrement())
+  judul       String
+  deskripsi   String?
+  tanggal     DateTime
+  fotoUrl     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model StrukturOrganisasi {
+  id          Int      @id @default(autoincrement())
+  nama        String
+  jabatan     String
+  fotoUrl     String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
